@@ -7,12 +7,36 @@
   align-items: center;
 }
 
-
-.heroTextContainer{
+.heroTextContainer {
   max-width: 1100px;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
+
 .heroText {
-    font-size: 5rem;
-    color: #eeeeee;
+  font-size: 5rem;
+  color: #eeeeee;
+}
+
+@media (max-width: 1300px) {
+  .heroTextContainer {
+    max-width: none;
+    width: 100%;
+    padding-inline: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTextContainer {
+    max-width: none;
+    width: 80vw;
+    padding-inline: 1rem;
+    justify-content: center;
+  }
+
+  .heroText {
+    font-size: 2.5rem;
+    
+  }
 }

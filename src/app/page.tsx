@@ -3,14 +3,17 @@ import styles from "./page.module.scss";
 import ShoppingList from "./components/list/list";
 import Hero from "./components/hero/hero";
 import TextInput from "./components/input/input";
+import localFont from "next/font/local";
+
+const myFont = localFont({src: "../../fonts/SpaceMono-Regular.ttf"})
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main} style={myFont.style}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          Get started with&nbsp;
+          <code className={styles.code}>Morpheus</code>
         </p>
         <div>
           <a
@@ -31,7 +34,9 @@ export default function Home() {
         </div>
       </div>
       <Hero></Hero>
+      <br></br><br></br>
       <div className={styles.center}>
+        
         <ShoppingList></ShoppingList>
         {/* <Image
           className={styles.logo}
@@ -42,9 +47,9 @@ export default function Home() {
           priority
         /> */}
       </div>
-
       <TextInput></TextInput>
-
+        <br></br>
+        <br></br>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

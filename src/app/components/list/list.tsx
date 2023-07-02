@@ -24,13 +24,14 @@ const features = [
 
 export default function ShoppingList() {
   const listItems = features.map((feature) => (
-    // <li key={features.id} className={styles.listItem}>
-    //   {product.title}
-    // </li>
     <li key={feature.id} className={styles.listItem}>
       {feature.title}
     </li>
   ));
 
-  return <ul>{listItems}</ul>;
+  return (
+    <section className={styles.listContainer}>
+      <ul className={styles.shoppingList}>{listItems}</ul>
+    </section>
+  );
 }

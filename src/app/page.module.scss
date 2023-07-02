@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 4rem 6rem 10rem 6rem;
   min-height: 100vh;
 }
 
@@ -16,6 +16,7 @@
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  margin-bottom: 3rem;
 }
 
 .description a {
@@ -62,6 +63,10 @@
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+  & span {
+    font-family: "Inter";
+    font-size: 1.7rem;
+  }
 }
 
 .card p {
@@ -144,6 +149,7 @@
 
   .card h2 {
     margin-bottom: 0.5rem;
+    
   }
 
   .center {
@@ -185,6 +191,7 @@
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
+   
   }
 
   .description div {
@@ -227,3 +234,4 @@
     transform: rotate(0deg);
   }
 }
+
