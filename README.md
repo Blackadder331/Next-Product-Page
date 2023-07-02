@@ -1,3 +1,7 @@
+
+<img width="1633" alt="cover" src="https://github.com/Blackadder331/Next-Product-Page/assets/10698943/2c15983b-f908-455e-b7c3-128727065c9a">
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
