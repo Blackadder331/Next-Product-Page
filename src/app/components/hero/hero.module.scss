@@ -20,7 +20,7 @@
 .heroText {
   font-size: 4.25rem;
   line-height: 1.05;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .explainer {
@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 768px) {
+  .heroImage {
+    height: 70vh;
+  }
   .heroTextContainer {
     max-width: none;
     width: 70vw;

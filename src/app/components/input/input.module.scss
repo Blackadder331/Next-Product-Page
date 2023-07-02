@@ -10,7 +10,7 @@
   border: none;
   border-bottom: 1px solid #6c6c6c;
   background: transparent;
-  color: #eeeeee;
+  color: #ffffff;
 }
 
 .input:focus {
@@ -123,4 +123,16 @@
   .input {
     width: 240px;
   }
+
+  .group .label {
+
+    font-size: 1.1rem
+  }
+  
+  .input:focus ~ .label,
+  .input:valid ~ .label {
+    font-size: .9rem;
+    color: aquamarine;
+  }
+  
 }
