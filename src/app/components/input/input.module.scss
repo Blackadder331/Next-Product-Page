@@ -24,7 +24,7 @@
   position: absolute;
   pointer-events: none;
   left: 5px;
-  top: 10px;
+  top: 8px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
@@ -90,5 +90,22 @@
   to {
     width: 185px;
     background: transparent;
+  }
+}
+
+
+.card {
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: padding-top 0.2s ease;
+
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+
+  margin: 2rem;
+  &:focus-within {
+    padding-top: 3.75rem;
   }
 }

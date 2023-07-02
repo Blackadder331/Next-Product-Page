@@ -6,9 +6,12 @@ export default function Hero(){
     
     return(
         <section className={styles.heroImage}>
+            <div className={styles.heroTextContainer}>
             <div className={styles.heroText}>
                 <h2>Text</h2>
             </div>
+            </div>
+            
         </section>
     )
 }

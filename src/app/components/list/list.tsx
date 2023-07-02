@@ -18,6 +18,8 @@ const features = [
   { title: "Energy Efficiency", id: 8 },
   { title: "Compatibility with Existing Systems", id: 9 },
   { title: "Enhanced Security Applications", id: 10 },
+  { title: "Seamless Integration with IoT Devices", id: 11 },
+  { title: "Customizable Morphing Speed", id: 12 },
 ];
 
 export default function ShoppingList() {
