@@ -1,5 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.scss";
+import ShoppingList from "./components/list/list";
+import Hero from "./components/hero/hero";
+import TextInput from "./components/input/input";
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -27,17 +30,20 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+      <Hero></Hero>
       <div className={styles.center}>
-        <Image
+        <ShoppingList></ShoppingList>
+        {/* <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        />
+        /> */}
       </div>
+
+      <TextInput></TextInput>
 
       <div className={styles.grid}>
         <a
@@ -91,5 +97,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
