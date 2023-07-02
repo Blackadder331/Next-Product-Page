@@ -7,6 +7,7 @@
   min-height: 100vh;
 }
 
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -45,10 +46,12 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: 1.5rem 1.5rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
@@ -89,14 +92,14 @@
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
-  height: 360px;
+  height: 460px;
   margin-left: -400px;
 }
 
 .center::after {
   background: var(--primary-glow);
   width: 240px;
-  height: 180px;
+  height: 280px;
   z-index: -1;
 }
 
@@ -112,6 +115,11 @@
 .logo {
   position: relative;
 }
+
+.vercelLogo {
+  position: relative;
+  right: 0;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -121,6 +129,7 @@
 
   .card:hover span {
     transform: translateX(4px);
+    color: aquamarine;
   }
 }
 
@@ -141,15 +150,17 @@
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
+    grid-row-gap: 2rem;
   }
 
   .card {
     padding: 1rem 2.5rem;
+    /*  background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15); */
   }
 
   .card h2 {
     margin-bottom: 0.5rem;
-    
   }
 
   .center {
@@ -191,7 +202,6 @@
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
-   
   }
 
   .description div {
@@ -207,6 +217,20 @@
     );
     z-index: 1;
   }
+  .center::before {
+    background: var(--secondary-glow);
+    border-radius: 50%;
+    width: 480px;
+    height: 760px;
+    margin-left: -400px;
+  }
+
+  .center::after {
+    background: var(--primary-glow);
+    width: 240px;
+    height: 480px;
+    z-index: -1;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -216,9 +240,10 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   .vercelLogo {
     filter: invert(1);
+    
   }
 
   .logo {
@@ -234,4 +259,3 @@
     transform: rotate(0deg);
   }
 }
-

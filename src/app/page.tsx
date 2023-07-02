@@ -5,7 +5,7 @@ import Hero from "./components/hero/hero";
 import TextInput from "./components/input/input";
 import localFont from "next/font/local";
 
-const myFont = localFont({src: "../../fonts/SpaceMono-Regular.ttf"})
+const myFont = localFont({ src: "../../fonts/SpaceMono-Regular.ttf" });
 
 export default function Home() {
   return (
@@ -21,35 +21,27 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/morph.svg"
+              alt="MORPHEUS Logo"
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={225}
+              height={28.35}
               priority
             />
           </a>
         </div>
       </div>
       <Hero></Hero>
-      <br></br><br></br>
+      <br></br>
+      <br></br>
+
       <div className={styles.center}>
-        
         <ShoppingList></ShoppingList>
-        {/* <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        /> */}
       </div>
       <TextInput></TextInput>
-        <br></br>
-        <br></br>
+      <br></br>
+      <br></br>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -58,9 +50,12 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Docs <span>-&gt;</span>
+            Whitepaper <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>
+            Discover the groundbreaking technology behind liquid metal
+            transformation.
+          </p>
         </a>
 
         <a
@@ -70,9 +65,12 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Learn <span>-&gt;</span>
+            Research <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>
+            Delve into the research and development of liquid metal
+            applications.
+          </p>
         </a>
 
         <a
@@ -82,9 +80,12 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Templates <span>-&gt;</span>
+            Testimonials <span>-&gt;</span>
           </h2>
-          <p>Explore the Next.js 13 playground.</p>
+          <p>
+            Explore success stories and testimonials from users of liquid metal
+            technology.
+          </p>
         </a>
 
         <a
@@ -94,10 +95,10 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2>
-            Deploy <span>-&gt;</span>
+            Funding <span>-&gt;</span>
           </h2>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Learn about our funding opportunities in the liquid metal industry.
           </p>
         </a>
       </div>

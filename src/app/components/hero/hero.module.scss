@@ -1,10 +1,13 @@
 .heroImage {
   background-color: #4d4d4d;
-  height: 40vh;
+  height: 49vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../../../public/liquid.png);
 }
 
 .heroTextContainer {
@@ -15,8 +18,20 @@
 }
 
 .heroText {
-  font-size: 5rem;
+  font-size: 4.25rem;
+  line-height: 1.05;
   color: #eeeeee;
+}
+
+.explainer {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  width: 100%;
+  max-width: 45ch;
+  text-align: left;
 }
 
 @media (max-width: 1300px) {
@@ -30,13 +45,20 @@
 @media (max-width: 768px) {
   .heroTextContainer {
     max-width: none;
-    width: 80vw;
+    width: 70vw;
     padding-inline: 1rem;
     justify-content: center;
   }
 
   .heroText {
     font-size: 2.5rem;
-    
+  }
+
+  .explainer {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    max-width: 40ch;
   }
 }

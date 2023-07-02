@@ -102,7 +102,7 @@
 
   background: rgba(var(--card-rgb), 0.1);
   border: 1px solid rgba(var(--card-border-rgb), 0.15);
-
+  cursor: pointer;
   margin: 2rem;
   &:focus-within {
     padding-top: 3.5rem;
